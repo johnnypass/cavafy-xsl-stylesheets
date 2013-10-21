@@ -1,3 +1,4 @@
 cavafy-xsl-stylesheets
 ======================
-essentially a edited version of Dave Rice's mediainfo2pbcoreinstantiation.xsl. Unlike Dave's xsl, this stylesheet is meant to create a valid PBCore asset document, which includes all the madatory fields required for upload by the asset management system, WNET PBcore.
+Essentially a edited version of Dave Rice's mediainfo2pbcoreinstantiation.xsl. Unlike Dave's xsl, this stylesheet i
+This stylesheet is also specific to the workflow of NYPR and has some features that will only work with the archives filenaming convemtions. It is also meanonly for use with audio wave files and not video.
