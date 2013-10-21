@@ -18,13 +18,13 @@
                         <pbcoreInstantiation>
                             <xsl:if test="string-length(UMID)>0">
                                 <instantiationIdentifier>
-                                    <xsl:attribute name="source">NYPR DAVID UMID</xsl:attribute>
+                                    <xsl:attribute name="source">DAVID UMID</xsl:attribute>
                                     <xsl:value-of select="UMID"/>
                                 </instantiationIdentifier>
                             </xsl:if>
                             <xsl:if test="string-length(../../FOREIGNMOTIVE)>0">
                                 <instantiationIdentifier>
-                                    <xsl:attribute name="source">NYPR DAVID RUNNING NUMBER</xsl:attribute>
+                                    <xsl:attribute name="source">DAVID RUNNING NUMBER</xsl:attribute>
                                     <xsl:value-of select="../../FOREIGNMOTIVE"/>
                                 </instantiationIdentifier>
                             </xsl:if>
@@ -87,7 +87,7 @@
                                 <xsl:when
                                     test="string(../../AUDIOFORMAT)='Wave,MTEProject,DavidProject,RIFF' or 'Wave,RIFF'">
                                     <instantiationStandard>
-                                        <xsl:attribute name="source">NYPR DAVID AUDIOFORMAT</xsl:attribute>
+                                        <xsl:attribute name="source">DAVID AUDIOFORMAT</xsl:attribute>
                                         <xsl:text>WAVE</xsl:text>
                                     </instantiationStandard>
                                 </xsl:when>
@@ -132,7 +132,7 @@
                                 <xsl:if test="string-length(../../FILENAME)>0">
                                     <xsl:if test="string-length(../../TITLE)>0">
                                         <essenceTrackIdentifier>
-                                            <xsl:attribute name="source">NYPR DAVID TITLE</xsl:attribute>
+                                            <xsl:attribute name="source">DAVID TITLE</xsl:attribute>
                                             <xsl:value-of select="../../TITLE"/>
                                         </essenceTrackIdentifier>
                                     </xsl:if>
@@ -156,91 +156,91 @@
                             </instantiationEssenceTrack>
                             <xsl:if test="string-length(../../BROADCAST)>0">
                                 <instantiationAnnotation>
-                                    <xsl:attribute name="annotationType">NYPR DAVID BROADCAST</xsl:attribute>
+                                    <xsl:attribute name="annotationType">DAVID BROADCAST</xsl:attribute>
                                     <xsl:value-of select="../../BROADCAST"/>
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../USA/WNYC/BEAT)>0">
                                 <instantiationAnnotation>
-                                    <xsl:attribute name="annotationType">NYPR DAVID BEAT</xsl:attribute>
+                                    <xsl:attribute name="annotationType">DAVID BEAT</xsl:attribute>
                                     <xsl:value-of select="../USA/WNYC/BEAT"/>
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../../KEYWORDS)>0">
                                 <xsl:for-each select="str:tokenize(../../KEYWORDS, ',')">
                                     <instantiationAnnotation>
-                                        <xsl:attribute name="annotationType">NYPR DAVID KEYWORDS</xsl:attribute>
+                                        <xsl:attribute name="annotationType">DAVID KEYWORDS</xsl:attribute>
                                         <xsl:value-of select="normalize-space(.)"/>
                                     </instantiationAnnotation>
                                 </xsl:for-each>
                             </xsl:if>
                             <xsl:if test="string-length(../../REMARK)>0">
                                 <instantiationAnnotation>
-                                    <xsl:attribute name="annotationType">NYPR DAVID REMARK</xsl:attribute>
+                                    <xsl:attribute name="annotationType">DAVID REMARK</xsl:attribute>
                                     <xsl:value-of select="../../REMARK"/>
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../../FIRSTWORDS)>0">
                                 <instantiationAnnotation>
-                                    <xsl:attribute name="annotationType">NYPR DAVID FIRSTWORDS</xsl:attribute>
+                                    <xsl:attribute name="annotationType">DAVID FIRSTWORDS</xsl:attribute>
                                     <xsl:value-of select="../../FIRSTWORDS"/>
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../../LASTWORDS)>0">
                                 <instantiationAnnotation>
-                                    <xsl:attribute name="annotationType">NYPR DAVID FIRSTWORDS</xsl:attribute>
+                                    <xsl:attribute name="annotationType">DAVID FIRSTWORDS</xsl:attribute>
                                     <xsl:value-of select="../../LASTWORDS"/>
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../../SUBJECT)>0">
                                 <instantiationAnnotation>
-                                    <xsl:attribute name="annotationType">NYPR DAVID SUBJECT</xsl:attribute>
+                                    <xsl:attribute name="annotationType">DAVID SUBJECT</xsl:attribute>
                                     <xsl:value-of select="../../SUBJECT"/>
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../../TYPEDETAIL)>0">
                                 <instantiationAnnotation>
-                                    <xsl:attribute name="annotationType">NYPR DAVID TYPEDETAIL</xsl:attribute>
+                                    <xsl:attribute name="annotationType">DAVID TYPEDETAIL</xsl:attribute>
                                     <xsl:value-of select="../../TYPEDETAIL"/>
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../../PERFORMER)>0">
                                 <instantiationAnnotation>
-                                    <xsl:attribute name="annotationType">NYPR DAVID PERFORMER</xsl:attribute> 
+                                    <xsl:attribute name="annotationType">DAVID PERFORMER</xsl:attribute> 
                                     <xsl:value-of select="../../PERFORMER"/>                                   
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../../SPEAKER)>0">
                                 <instantiationAnnotation>
-                                    <xsl:attribute name="annotationType">NYPR DAVID SPEAKER</xsl:attribute>
+                                    <xsl:attribute name="annotationType">DAVID SPEAKER</xsl:attribute>
                                         <xsl:value-of select="../../SPEAKER"/>
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../../AUTHOR)>0">
                                 <instantiationAnnotation>
                                     <xsl:attribute name="annotationType"
-                                        >NYPR DAVID AUTHOR</xsl:attribute>
+                                        >DAVID AUTHOR</xsl:attribute>
                                     <xsl:value-of select="../../AUTHOR"/>
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../../EDITOR)">
                                 <instantiationAnnotation>
                                     <xsl:attribute name="annotationType"
-                                        >NYPR DAVID EDITOR</xsl:attribute>
+                                        >DAVID EDITOR</xsl:attribute>
                                     <xsl:value-of select="../../EDITOR"/>
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../../PROGRAM)>0">
                                 <instantiationAnnotation>
                                     <xsl:attribute name="annotationType"
-                                        >NYPR DAVID BROADCASTSTREAM</xsl:attribute>
+                                        >DAVID BROADCASTSTREAM</xsl:attribute>
                                     <xsl:value-of select="../../PROGRAM"/>
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../../BROADCASTINGS)>0">
                                 <instantiationAnnotation>
                                     <xsl:attribute name="annotationType"
-                                        >NYPR DAVID BROADCASTINGS</xsl:attribute>
+                                        >DAVID BROADCASTINGS</xsl:attribute>
                                     <xsl:value-of select="../../BROADCASTINGS"/>
                                 </instantiationAnnotation>
                             </xsl:if>
@@ -253,14 +253,14 @@
                             <xsl:if test="string-length(../../FIRSTUSEDATE)>0">
                                 <instantiationAnnotation>
                                     <xsl:attribute name="annotationType"
-                                        >NYPR DAVID FIRSTUSEDATE</xsl:attribute>
+                                        >DAVID FIRSTUSEDATE</xsl:attribute>
                                     <xsl:value-of select="../../FIRSTUSEDATE"/>
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../../FIRSTUSETIME)>0">
                                 <instantiationAnnotation>
                                     <xsl:attribute name="annotationType"
-                                        >NYPR DAVID FIRSTUSETIME</xsl:attribute>
+                                        >DAVID FIRSTUSETIME</xsl:attribute>
                                     <xsl:value-of select="../../FIRSTUSETIME"/>
                                 </instantiationAnnotation>
                             </xsl:if>
@@ -345,19 +345,19 @@
                             </xsl:if>
                             <xsl:if test="string-length(../../FILENAME2)>0">
                                 <instantiationAnnotation>
-                                    <xsl:attribute name="annotationType">NYPR DAVID FILENAME2</xsl:attribute>
+                                    <xsl:attribute name="annotationType">DAVID FILENAME2</xsl:attribute>
                                     <xsl:value-of select="../../FILENAME2"/>
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../../CREATOR)>0">
                                 <instantiationAnnotation>
-                                    <xsl:attribute name="annotationType">NYPR DAVID CREATOR</xsl:attribute>
+                                    <xsl:attribute name="annotationType">DAVID CREATOR</xsl:attribute>
                                     <xsl:value-of select="../../CREATOR"/>
                                 </instantiationAnnotation>
                             </xsl:if>
                             <xsl:if test="string-length(../../CHANGEUSER)>0">
                                 <instantiationAnnotation>
-                                    <xsl:attribute name="annotationType">NYPR DAVID CHANGEUSER</xsl:attribute>
+                                    <xsl:attribute name="annotationType">DAVID CHANGEUSER</xsl:attribute>
                                     <xsl:value-of select="../../CHANGEUSER"/>
                                 </instantiationAnnotation>
                             </xsl:if>
